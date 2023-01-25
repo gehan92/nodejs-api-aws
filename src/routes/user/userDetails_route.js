@@ -6,5 +6,6 @@ console.log("route-2")
 
 routes.post('/add',userController.AddDetails)
 routes.get('/get',userController.GetUserdetails)
+routes.get('/get/:id',userController.GetOneUserdetails)
 
 module.exports=routes

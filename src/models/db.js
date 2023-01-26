@@ -1,4 +1,3 @@
-console.log("db file inside model")
 const mysql = require('mysql')
 const dbConfig = require("../../config/db.config");
 

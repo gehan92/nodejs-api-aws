@@ -1,4 +1,3 @@
-console.log("user model-3")
 const sql= require ('./db');
 
 

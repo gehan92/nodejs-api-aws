@@ -1,4 +1,3 @@
-console.log("controller--->2")
 const User = require("../../models/user.model");
 
 exports.AddDetails = async function (req, res) {

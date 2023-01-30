@@ -73,3 +73,30 @@ exports.GetOneUserdetails = async function(req,res){;
     }
 
 }
+
+exports.showSampledata = async function(req,res){
+    try {
+        User.userDetailsView((err,data)=>{
+            // if(err){
+                return res.status(200).json(
+                   {
+                       succes:true,
+                       Message :"get all data -----"
+                   }
+                    );
+            // }
+            // else{
+            //    return res.status(200).json({
+            //        succes:true,
+            //        Data:data,
+            //        Message:"all data recived.."
+            //    }) ;
+
+               
+            // }
+        });
+    } catch (e) {
+        return res.status(400).json({message: e.message});
+    }
+
+}
